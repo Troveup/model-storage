@@ -1,0 +1,3 @@
+For some reason Blender exports the "Solid Band.Right Arm" mesh object incorrectly with normals inverted (or faces with wrong winding order? stopped debugging thoroughly since I got it working in customizer and reality server)
+
+To fix, flip the normal direction before exporting. I think the act of saving will supposedly fix the normals in blender, somehow creating invalid normals in the exported json.
