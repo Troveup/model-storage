@@ -1,0 +1,44 @@
+overall notes
+
+issues
+------
+
+[1] how does a non-beveled/filleted edge look when printed in metal? what is the threshold for minimum faces before the face starts to look tesselated
+[2] map a single control node value to several outputs sequentially
+[3] constrain related values to disallow slider configurations that result in invalid meshes
+[4] how strict is shapeways on only accepting manifold, self-intersecting meshes? what about degenerate tris?
+[5] combine two morphs as inverses (0 through .5 of the parent node goes through the reverse of one, then .5 through 1 does the other forward)
+[6] setting slider value ranges and properly normalizing them to internal representation
+
+[] implement translations on vertex groups
+[] implement shear on vertex groups
+
+models to complete (order not significant)
+------
+
+hex-2layer_ring - blocked on issue [1]
+warrior_ring - blocked on [2] and [3]
+two-prong-triangular_ring - needs to be remeshed, figure out how to project vertices to plane
+woven_ring - questionable mesh well-formedness [4]
+jjones_ring - pretty much done, requires [2]
+keyhole_ring - looks simple (is this the spec jjones implemented?) blocks on [2]
+two-bar-shift - looks like an extremely simple mesh, needs to be rebuilt from scratch quickly
+spike_bracelet - looks good, depends on [5] before we can publish (without a dozen extra sliders, at least)
+flowing_ring - simply needs to be rebuilt, looks like it would only take an hour or 2
+
+(image_list) -
+easy - 8
+hard - 3
+hard now, easy with wires - 1
+hard corner check - 1
+requires csg - 1
+
+mostly done (could be improved)
+------
+
+bar ring - could represent all the cube morphs as per-group scale factors in each axis, could also improve the topology around the connection to the prism
+mirror no hole - originally modelled as tris, might not have a great hires
+offset extruded - seems fine, pretty simple
+parted - could represent the morphs as shears and translations to save memory
+open-trapezoid_bracelet - could probably be hewn closer to andrew's specifications
+regular-shapes_ring - 4 simple geometric shape rings, supposed to be combined into one model when the model shortage is less urgent
