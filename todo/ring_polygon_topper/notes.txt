@@ -1,0 +1,1 @@
+Ah, this either needs to be remeshed manually or included after CSG is implemented. Also recalculate normals before next export, and don't use mirror modifier if possible.
