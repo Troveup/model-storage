@@ -1,0 +1,34 @@
+        {
+            "id": "Slide.Front.Up",
+            "label": "Up",
+            "group": "Front",
+            "children": [ "Front.Top.Up", "Front.Bottom.Up" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        },
+        {
+            "id": "Slide.Front.Down",
+            "label": "Down",
+            "group": "Front",
+            "children": [ "Front.Top.Down", "Front.Bottom.Down" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        },
+        {
+            "id": "Compress.Back",
+            "label": "Compress",
+            "group": "Back",
+            "min": 0,
+            "max": 0.25,
+            "children": [ "Back.Top.Down", "Back.Bottom.Up" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        },
+        {
+            "id": "Stretch.Back",
+            "label": "Stretch",
+            "group": "Back",
+            "children": [ "Back.Top.Up", "Back.Bottom.Down" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        }

@@ -1,0 +1,18 @@
+    "controls": [
+        {
+            "id": "Shear.Left",
+            "group": "Shear",
+            "label": "Left",
+            "children": [ "Shear.Left_Top", "Shear.Left_Bottom" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        },
+        {
+            "id": "Shear.Right",
+            "group": "Shear",
+            "label": "Right",
+            "children": [ "Shear.Right_Top", "Shear.Right_Bottom" ],
+            "inputFunc": "average",
+            "outputFunc": "direct"
+        }
+    ],

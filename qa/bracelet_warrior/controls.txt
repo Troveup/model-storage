@@ -1,0 +1,9 @@
+
+{
+    "id": "ornament_knob",
+    "label": "Prominence",
+    "group": "Ornament",
+    "children": [ "Ornament_Depth", "Ornament_Bevel.Top", "Ornament_Bevel.Bottom" ],
+    "inputFunc": "average",
+    "outputFunc": "direct"
+}

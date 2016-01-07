@@ -1,0 +1,1 @@
+This model has some distortion around the cube connection edges where the ring is wider than the cube. Could stand to be remeshed when things are less on fire.
